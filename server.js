@@ -63,6 +63,11 @@ app.post('/', async (req, res) => {
     }
 });
 
+// Health check endpoint
+app.get('/health', async (req, res) => {
+    res.status(200).json({ response: "OK" });
+});
+
 // Start server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, '0.0.0.0', () => {

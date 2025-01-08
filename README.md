@@ -19,7 +19,7 @@ Docker ([Install](https://docs.docker.com/engine/install/))
 npm install
 ```
 
-2. Put your Gemini API key into contacnts.js 
+2. Put your Gemini API key into constants.js 
 
 3. Run server:
 ```bash
