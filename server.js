@@ -64,7 +64,7 @@ app.post('/', async (req, res) => {
 });
 
 // Health check endpoint
-app.get('/health', async (req, res) => {
+app.get('/health/', async (req, res) => {
     res.status(200).json({ response: "OK" });
 });
 

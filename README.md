@@ -2,29 +2,10 @@
 # Description
 This is a Node.js (Express) based API for AI document editing, available for free public use.
 
-## IMPORTANT: place your Gemini API into .env file ([Google AI Studio](https://aistudio.google.com/app/apikey))
+## IMPORTANT: place your Gemini API into constants.js file ([Google AI Studio](https://aistudio.google.com/app/apikey))
 (create an account if needed)
-1. Create API Key and place it into .env file
+1. Create API Key and place it into constants.js file
 
-## Prerequisites
-- Node.js 18 or higher ([Download](https://nodejs.org/))
-- npm (comes with Node.js)
-
-### Optional Dependencies
-Docker ([Install](https://docs.docker.com/engine/install/))
-
-## Local Development Setup
-1. Install dependencies
-```bash
-npm install
-```
-
-2. Put your Gemini API key into constants.js 
-
-3. Run server:
-```bash
-npm start
-```
 
 ## Docker Setup
 1. Install - Docker ([Installation Guide](https://docs.docker.com/engine/install/))

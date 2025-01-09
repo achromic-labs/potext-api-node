@@ -48,8 +48,7 @@ if docker ps | grep -q $CONTAINER_NAME; then
     echo "✓ Container started successfully"
     echo "=== Container Details ==="
     docker ps | grep $CONTAINER_NAME
-    echo -e "\n🚀 Application is running at http://127.0.0.1:$PORT"
-    echo "📝 View logs with: docker logs $CONTAINER_NAME"
+    docker logs -f $CONTAINER_NAME 
 else
     echo "Error: Container failed to start"
     exit 1
