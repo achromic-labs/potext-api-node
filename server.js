@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 // Required imports
 const express = require('express');
 const cors = require('cors');
+const { GEMINI_API_KEY, MODEL_NAME } = process.env;
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-const { GEMINI_API_KEY, MODEL_NAME } = require('./constants');
 
 // Initialize Express application
 const app = express();
@@ -18,7 +20,6 @@ app.use(cors({
 
 // Parse JSON bodies
 app.use(express.json());
-
 // Configure Gemini AI
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: MODEL_NAME });

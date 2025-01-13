@@ -16,14 +16,11 @@ RUN apt-get update && apt-get install -y curl gpg && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy package files
-COPY package*.json ./
+# Copy application code
+COPY . .
 
 # Install dependencies
 RUN npm install
-
-# Copy application code
-COPY . .
 
 # Expose port
 EXPOSE 8080
