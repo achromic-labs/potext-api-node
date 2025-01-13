@@ -4,8 +4,8 @@
 set -e
 
 # Configuration
-IMAGE_NAME="ai-document-api-node"
-CONTAINER_NAME="ai-document-api-node"
+IMAGE_NAME="potext-api-node"
+CONTAINER_NAME="potext-api-node"
 PORT="8080"
 
 echo "=== AI Document API Node.js Docker Deployment ==="

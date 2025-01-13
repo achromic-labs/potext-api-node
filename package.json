@@ -1,5 +1,5 @@
 {
-  "name": "ai-document-api-node",
+  "name": "potext-api-node",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {

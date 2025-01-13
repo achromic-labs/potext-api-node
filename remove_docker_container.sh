@@ -17,7 +17,7 @@
 #
 # Operations:
 #   1. Checks if Docker is running
-#   2. Checks if container 'ai-document-api-node' exists
+#   2. Checks if container 'potext-api-node' exists
 #   3. If exists:
 #      - Stops the running container
 #      - Removes the container completely
@@ -25,7 +25,7 @@
 #
 # Note: 
 #   - This script only removes containers, not Docker images
-#   - Container name: ai-document-api-node
+#   - Container name: potext-api-node
 
 # Text colors for better visibility
 GREEN='\033[0;32m'
@@ -41,7 +41,7 @@ if ! docker info >/dev/null 2>&1; then
 fi
 
 # Check if the container exists
-CONTAINER_NAME="ai-document-api-node"
+CONTAINER_NAME="potext-api-node"
 if [ "$(docker ps -aq -f name=$CONTAINER_NAME)" ]; then
     echo -e "${GREEN}Found container: $CONTAINER_NAME${NC}"
     

@@ -2,7 +2,7 @@
 FROM node:lts-slim
 
 # Add container name label
-LABEL container_name="ai-document-api-node"
+LABEL container_name="potext-api-node"
 
 # Set working directory
 WORKDIR /app
