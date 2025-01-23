@@ -1,4 +1,4 @@
-# potext-api-node
+# https://www.potext.com
 # Description
 This is a Node.js (Express) based API for AI document editing, available for free public use.
 
